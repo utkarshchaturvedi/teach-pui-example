@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head> <title>Product Detail</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head> 
+  
+    <body class="body">
+
+
+        <div class="nav">
+            <div class="nav-logo">  <!--BunBun Logo-->
+                <a href="index.html">
+                    <img src="Assets/logo-01.svg" class="logo-img"  alt="BunBun logo"/>
+                </a>
+            </div>
+
+            <div class="nav-text">
+            <div class="top-links">
+                <a href="Index.html" class="h6-highlight"><mark>PRODUCTS</mark></a><br>
+                <a href="Cart.html" class="h6-highlight">CART</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="title-wrapper">
+                <h1 class="h1"> Original cinnamon roll</h1>
+            </div>
+            </div>
+            
+        </div>
+             
+        <div class ="container"> 
+
+            <div class="product-details-wrapper">
+                <img src="Assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll" class="product-image-large"/>
+                
+                <div class = "product-input-wrapper">
+                    <h3 class="h3">Customise our delicious, hand-made cinnamon rolls to your liking!</h3>
+
+                    <div class="dropdown-group"> 
+                        <div class="dropdown"> <!--Dropdown 1 for Glazing-->
+                            <p class="label">Glazing</p>
+                            <select name="glazing" id="glazing" class="select" onchange="priceUpdate()">
+                            </select>
+                        </div> 
+                        
+                        <div class="dropdown"> <!--Dropdown 2 for Pack size-->
+                            <p class="label">Pack size</p>
+                            <select name="Pack Size" id="packsize" class="select" onchange="priceUpdate()">
+                            </select>
+                        </div>   
+                    </div>
+
+                    <div class="button-group-horizontal"> 
+                        <h3 class="h3" id="price">$2.49</h3>
+                        <button class="button">Add to cart</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        
+    </body>
+</html> 
