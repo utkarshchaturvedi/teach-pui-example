@@ -113,10 +113,10 @@ function updateElement(roll){
     rollImageElem.src = "Assets/" + rolls[roll.type].imageFile;
 
     const rollTypeElem = roll.element.querySelector('#roll-name');
-    rollTypeElem.innerText = roll.type + "Cinnamon Roll";
+    rollTypeElem.innerText = roll.type + ' ' + "Cinnamon Roll";
 
     const glazingElem = roll.element.querySelector('#glazing');
-    glazingElem.innerText = "Glazing" + roll.glazing;
+    glazingElem.innerText = "Glazing" + ' ' + roll.glazing;
 
     const packSizeElem = roll.element.querySelector('#pack-size');
     packSizeElem.innerText = "Pack Size: " + roll.size; 
