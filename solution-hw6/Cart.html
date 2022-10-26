@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Bakery Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/cart.js"></script>
+
+
+  </head>
+
+  <body class="body">
+        <div class="nav">
+            <div class="nav-logo">  <!--BunBun Logo-->
+                <a href="index.html">
+                    <img src="Assets/logo-01.svg" class="logo-img"  alt="BunBun logo"/>
+                </a>
+            </div>
+
+            <div class="nav-text">
+                <div class="top-links">
+                    <a href="Index.html" class="h6-highlight"><mark>PRODUCTS</mark></a><br>
+                    <a href="Cart.html" class="h6-highlight">CART</a>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="title-wrapper">
+                    <h1 class="h1"> Shopping Cart</h1>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-cart"> 
+
+            <div class="cart-wrapper">
+
+                <div class = "cart-list">
+                    <template id = "item-template">
+                        <div class="cart-item">
+    
+                            <div class="cart-col-1"> 
+        
+                                <div class="cart-img-wrapper">
+                                    <img src="Assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll" class="cart-image"/>
+                                    <p class="delete"><b>remove</b></p>
+                                </div>
+                                
+                                <div class="product-text">
+                                    <p id = "roll-name" class="product-text-line">Original Cinnamon Roll</p> 
+                                    <p id = "glazing" class="product-text-line">Glazing: Keep Original</p> 
+                                    <p id = "pack-size" class="product-text-line">Pack Size: 1</p>
+                                </div>
+        
+                            </div>
+                                
+                            <h3 class="roll-price" id ="roll-price">$ 2.49</h3>
+                        </div>
+    
+                    </template>
+                    
+                </div>
+
+                
+                <hr class="divider">
+
+                <div class="cart-price">
+
+                        
+                    <h3 class="h3">Total</h3>
+                        
+                    <h3 class="h3" id = "totalPrice">$ 29.94</h3>
+                </div>
+
+                <button class="button-right">Checkout</button>
+
+            </div>
+
+        </div>
+
+  </body>
+</html>
