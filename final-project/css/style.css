@@ -1,0 +1,767 @@
+/* Style guide - headers, body, text, links */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #e1e1e1;
+  font-size: 1vw;
+  line-height: 1.2vw;
+  font-weight: 300;
+  background-color: #161616;
+  width: 100vw;
+}
+
+h1 {
+  color: #ebebeb;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #ebebeb;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  color: #ebebeb;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h5 {
+  font-size: 0.8rem;
+  line-height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 0.7rem;
+  line-height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: #bebebe;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+a {
+  padding-bottom: 0.1rem;
+  font-size: 0.95rem;
+  line-height: 110%;
+  text-decoration: none;
+  display: flex;
+  color: #ff4a4a;
+  font-weight: 400;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.text-link{
+  padding-bottom: 6px;
+}
+
+a:hover{
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.button {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  display: flex;
+  height: 3rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #292629;
+  font-size: 0.8rem;
+  z-index: 2;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fb3535;
+}
+
+
+.button-icon {
+  position: relative;
+  z-index: 2;
+  width: 1rem;
+  opacity:0.85;
+}
+
+.button:hover {
+  background-color:#a13232;
+  transition: 0.5s;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  color: #f8f5f5 ;
+}
+
+
+.center-align {
+  text-align: center;
+}
+
+.body-text.center-align {
+  font-size: 0.9rem;
+}
+
+.caption {
+  font-size: 0.8rem;
+}
+
+.wt_medium {
+  color: #ebebeb;
+  font-weight: 500;
+}
+
+.caption-mono {
+  font-size: 0.8rem;
+}
+
+/* Spacer variants*/
+.spacer-vertical {
+  width: 100%;
+}
+
+.spacer-vertical._1-rem {
+  height: 1rem;
+}
+
+.spacer-vertical._0-5-rem {
+  height: 0.5rem;
+}
+
+.spacer-vertical._2-rem {
+  height: 2rem;
+}
+
+.spacer-vertical._1-5rem {
+  height: 1.5rem;
+}
+
+.spacer-horizontal {
+  height: 100%;
+}
+
+.spacer-horizontal._1rem {
+  width: 1rem;
+}
+
+.spacer-horizontal._0-5-rem {
+  width: 0.5rem;
+}
+
+/* Page containers */
+
+.page-wrapper {
+  width: 100%;
+  background-color: #161616;
+}
+
+/* Grid on desktop viewport*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 0.25rem;
+  grid-template-areas: 
+    "profile profile profile profile coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic"
+    "profile profile profile profile coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic coverpic"
+    "profile profile profile profile projects projects projects projects projects projects projects projects social social social social"
+    "profile profile profile profile projects projects projects projects projects projects projects projects listening listening listening listening"
+    "profile profile profile profile projects projects projects projects projects projects projects projects listening listening listening listening"
+    "profile profile profile profile projects projects projects projects projects projects projects projects listening listening listening listening"
+    "profile profile profile profile reading reading reading reading reading places places places listening listening listening listening"
+    "experience experience experience experience reading reading reading reading reading places places places listening listening listening listening"
+    "experience experience experience experience reading reading reading reading reading places places places watching watching watching watching"
+    "experience experience experience experience reading reading reading reading reading places places places watching watching watching watching"
+    "experience experience experience experience topics topics topics topics topics places places places watching watching watching watching"
+    "experience experience experience experience topics topics topics topics topics places places places watching watching watching watching";
+  width: 97%;
+  height: 97%;
+  padding: 1.5%;
+  background-size: auto, auto;
+  background-position: 0px 0px, 0px 0px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../images/BG-LiquidGradient.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 95vh;
+}
+
+
+
+/* Block styled variants*/
+
+.block {
+  position: relative;
+  display: flex;
+  padding: 1.5rem 2rem;
+  flex-direction: column;
+  background-color: #1e1d1f;
+  /* margin:0.25rem; */
+}
+
+.block.flex-justify-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.block.flex-justify-start {
+  overflow: hidden;
+}
+
+.block.cover {
+  background-image: url('../images/Cover-photo.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.block.low-padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+.profile_img_wrapper {
+  display: flex;
+  width: 50%;
+  padding-right: 2.6rem;
+  padding-left: 2.6rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.profile_img {
+  width: 100%;
+}
+
+.row-item-small {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+}
+
+.icon.small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292629; 
+}
+
+.icon.medium {
+  position: relative;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #292629;
+}
+
+
+
+
+.subdued {
+  color: #999898;
+}
+
+.flex-justify-start {
+  display: flex;
+}
+
+.work-item {
+  position: relative;
+}
+
+
+
+.work-item-row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-label {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 2;
+  padding: 1.5rem 1.5rem 0.75rem;
+  background-color: #1e1d1f;
+}
+
+.card-gradient {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  height: 4rem;
+  background-image: linear-gradient(180deg, rgba(30, 29, 31, 0.01), #1e1d1f);
+}
+
+.block-content {
+  position: static;
+  overflow: scroll;
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.block-content.flex-horizontal {
+  height: 100%;
+  align-items: center;
+}
+
+.block-content.flex-horizontal.no-margin {
+  margin-top: 0rem;
+}
+
+.block-content.flex-vertical {
+  display: flex;
+  height: 100%;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-horizontal {
+  display: flex;
+}
+
+.project-item {
+  display: flex;
+  width: 33%;
+  margin-right: 0.5em;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+}
+
+.project-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 62.5%;
+  object-fit: cover;
+}
+
+.project-img-block {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+}
+
+.books-img-block {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  justify-content: center;
+}
+
+.books-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+}
+
+.book-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-item {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 1.2rem;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 3rem;
+}
+
+.social-link-block {
+  padding-bottom: 0rem;
+  border-bottom-style: none;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);;
+}
+
+.social-link-block:hover{
+  transform: scale(1.1);
+}
+
+
+
+.red-icon-overlay {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  border-radius: 100%;
+  background-color: #ff4a4a;
+  mix-blend-mode: darken;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.red-icon-overlay:hover{
+  background-color: #fb3535;
+  box-shadow: 0 0 10px 5px rgba(201, 22, 22, 0.324);
+}
+
+.listening-art {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.album_art {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/Arctic-Monkeys-The-Car.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.listening-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.footnote {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.block.places{
+  background-image: url('../images/NYC.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.text-link-center{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.block-label.alpha {
+  display: flex;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  justify-content: space-between;
+  background-color: rgba(30, 29, 31, 0);
+  background-image: linear-gradient(180deg, #000, transparent);
+}
+
+.topic-wrapper {
+  display: flex;
+  margin-bottom: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.block.cover {
+  background-image: url('../images/Cover-photo.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* Slider */
+
+.watching-wrapper {
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  align-items: flex-end;
+  /* background-image: linear-gradient(180deg, rgba(22, 22, 22, 0) 67%, rgba(0, 0, 0, 0.75)), url('../images/MareofEasttown.jpg'); */
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+.imageSlides {
+  display: none; 
+  height: 100%;
+}
+ 
+.img-film {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+/* Slideshow container and compoenents */
+.images-slideshow {
+  max-width:100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+ 
+.slider-btn{
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 1rem;
+  height: 1rem;
+  padding: 16px 16px;
+  margin-top: auto; 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+ 
+.previous {
+  display: flex;
+  left: 2%;
+  text-align: center;
+}
+.next {
+  right: 2%;
+  text-align: center;
+}
+ 
+.previous:hover,
+.next:hover {
+  color: rgb(255, 253, 253);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive css for smaller viewports */
+
+
+#profile {
+  grid-area: profile;
+}
+
+#experience {
+  grid-area: experience;
+}
+
+
+#projects{
+  grid-area: projects;
+}
+
+#social {
+  grid-area: social;
+}
+
+#topics{
+  grid-area:topics;
+}
+
+#reading{
+  grid-area: reading;
+}
+
+#places{
+  grid-area: places;
+}
+
+#watching{
+  grid-area: watching;
+}
+
+#listening{
+  grid-area: listening;
+}
+
+#coverpic{
+  grid-area: coverpic;
+}
+
+/* tablet viewport responsive codde */
+@media  screen and (max-width: 900px) {
+  .page-wrapper{
+    height: auto;
+  }
+  .grid-container{
+    height: auto;
+  }
+
+  .grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+    "profile profile coverpic coverpic coverpic coverpic"
+    "profile profile projects projects projects projects"
+    "profile profile projects projects projects projects"
+    "experience experience reading reading reading reading"
+    "experience experience reading reading reading reading"
+    "experience experience social social social social"
+    "places places places listening listening listening" 
+    "places places places listening listening listening"
+    "places places places watching watching watching"
+    "places places places watching watching watching"
+    "places places places topics topics topics"
+  }
+}
+
+/* mobile viewport responsive codde */
+@media  screen and (max-width: 580px) {
+  .page-wrapper{
+    height: auto;
+  }
+
+  .grid-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr auto auto auto auto 1fr 1fr 1fr auto auto ;
+    grid-template-areas: 
+    "coverpic"
+    "profile"
+    "projects"
+    "experience"
+    "reading"
+    "places" 
+    "listening"
+    "watching"
+    "topics"
+    "social"
+  }
+
+  .block.flex-justify-center
+  {
+    padding-bottom: 4rem;
+  }
+
+  .block-content.flex-horizontal {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .project-item {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .books-img-wrapper {
+    height: 12rem;
+    padding-bottom: 1rem;
+  }
+
+  .book-item {
+    width: 60%;
+    padding-bottom: 2rem;
+  }
+
+  .text-link{
+    padding-bottom: 6px;
+  }
+  
+}
+
+

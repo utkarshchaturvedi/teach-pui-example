@@ -84,7 +84,6 @@ for (i=0; i<cart.length; i++) {
     packSizeElem.innerText = "Pack Size: " + cart[i].size; 
 
     let rollPrice = (cart[i].basePrice + glazingPrices[cart[i].glazing])*packSizePrices[cart[i].size];
-    console.log("z" + glazingPrices[cart[i].glazing]);
     cart[i].calculatedPrice = rollPrice.toFixed(2);
     console.log(rollPrice);
     const rollPriceElement = cartItemElem.querySelector('#roll-price');
